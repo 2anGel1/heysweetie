@@ -1,22 +1,20 @@
 let slideIndex = 1
 
-setTimeout(function () {showSlides(slideIndex)}, 3050)
+setTimeout(function(){
+    showSlides(slideIndex)
+}, 3000)
 
 // Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n)
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n)
-}
 
 function showSlides(n) {
 
-    let i
-    let slides = document.getElementsByClassName("mySlides")
-    
+    var i
+    var slides = document.getElementsByClassName("mySlides")
+
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -28,5 +26,5 @@ function showSlides(n) {
     }
 
     slides[slideIndex - 1].style.display = "block"
-    typeWriterSimpleText(slides[slideIndex - 1].id, slides[slideIndex - 1].innerHTML, 0, 70)
+    typeWriterSimpleText(slides[slideIndex - 1].id, slides[slideIndex - 1].innerHTML, 0, 50)
 }
