@@ -1,0 +1,122 @@
+
+:root{
+
+}
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.main{
+
+    position: absolute;
+
+    width: 80%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__countdown{
+    background-color: white;
+    color: black;
+
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+.timer{
+    font-size: 40px;
+}
+
+.main__home{
+    font-size: 15px;
+}
+
+.main__praises{
+
+    width: 90%;
+    height: 75%;
+}
+
+.praises__title{
+
+    width: 100%;
+    height: 15%;
+
+    /* border: 1px solid white; */
+
+    font-family: 'Rubik Bubbles';
+}
+
+.praises__title h3{
+    font-size: 20px;
+}
+
+.praises__body{
+
+    width: 100%;
+    height: 75%;
+
+    /* border: 1px solid white; */
+}
+
+.praises__body p {
+    display: none;
+
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: white;
+}
+
+.praises__navs{
+
+    width: 100%;
+    height: 10%;
+
+    /* border: 1px solid white; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#msg{
+
+    align-items: center;
+
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 32px;
+    color: white;
+
+}
+
+#year{
+    font-family: 'Rubik Bubbles';
+    font-size: 40px;
+}
+
+#nxt{
+    opacity: 0.0;
+}
+
