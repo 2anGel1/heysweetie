@@ -2,7 +2,7 @@ let slideIndex = 1
 
 setTimeout(function(){
     showSlides(slideIndex)
-}, 3000)
+}, 3200)
 
 // Next/previous controls
 function plusSlides(n) {
@@ -26,5 +26,5 @@ function showSlides(n) {
     }
 
     slides[slideIndex - 1].style.display = "block"
-    typeWriterSimpleText(slides[slideIndex - 1].id, slides[slideIndex - 1].innerHTML, 0, 50)
+    typeWriterSimpleText(slides[slideIndex - 1].id, slides[slideIndex - 1].innerHTML, 0, 70)
 }

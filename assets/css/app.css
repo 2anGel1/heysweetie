@@ -72,6 +72,10 @@ body {
     height: 75%;
 
     /* border: 1px solid white; */
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
 }
 
 .praises__body p {
@@ -80,6 +84,7 @@ body {
     font-family: 'Poppins';
     font-size: 17px;
     color: white;
+    box-sizing: border-box;
 }
 
 .praises__navs{
@@ -91,6 +96,17 @@ body {
 
     display: flex;
     justify-content: space-between;
+
+    margin-top: 20px;
+}
+
+#pn{
+    display: none;
+}
+
+.myysSlides {
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -113,4 +129,5 @@ body {
 #nxt{
     opacity: 0.0;
 }
+
 
