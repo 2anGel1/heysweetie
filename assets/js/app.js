@@ -44,6 +44,10 @@ function typeWriterListe(elid, texts, index, step) {
 
 function typeWriterSimpleText(elid, text, step, _speed) {
 
+    if(text.length == step){
+        document.getElementById('pn').style.display = "flex"
+    }
+
     if (step == 0)
         document.getElementById(elid).innerHTML = ""
 
@@ -54,6 +58,7 @@ function typeWriterSimpleText(elid, text, step, _speed) {
         setTimeout(function () {
             typeWriterSimpleText(elid, text, step, _speed)
         }, _speed)
+        document.getElementById('pn').style.display = "none"
     }
 
 }
@@ -86,7 +91,7 @@ function main() {
 function mainPraises() {
 
     fade("m_p")
-    typeWriterSimpleText("ptitle", "Mes prères pour toi", 0, speed)
+    typeWriterSimpleText("ptitle", "Ces mots sont pour toi, chère Keren", 0, speed-50)
     loop()
 }
 
